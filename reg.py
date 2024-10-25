@@ -5,7 +5,7 @@ DISCORD_CLIENT_ID = os.getenv('CLIENT_ID')
 DISCORD_TOKEN = os.getenv('TOKEN')
 
 def push_metadata():
-    url = f"https://discord.com/api/v10/users/@me/applications/{DISCORD_CLIENT_ID}/role-connections/metadata"
+    url = f"https://discord.com/api/v10/applications/{DISCORD_CLIENT_ID}/role-connections/metadata"
     body = [
         {  
             "key": "is_heisenberg",
